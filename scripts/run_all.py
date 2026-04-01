@@ -8,7 +8,7 @@ scripts = [
 
 print("Iniciando Budget Analyzer\n")
 for script in scripts:
-    print(f"▶ {script}")
+    print(f"{script}")
     r = subprocess.run([sys.executable, script], capture_output=True, text=True)
     print(r.stdout)
     if r.returncode != 0:
